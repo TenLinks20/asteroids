@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+*/env/      # If env can be in subdirectories
+*/venv/     # If venv can be in subdirectories
+*/.venv/    # If .venv can be in subdirectories
+
+# Other common Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

@@ -12,6 +12,9 @@ def main():
     scr_height = SCREEN_HEIGHT
     scr = pygame.display.set_mode((scr_width, scr_height))
     pygame.display.set_caption("Asteroids")
+    
+    clock = pygame.time.Clock()
+    dt = 0
 
     while True:
 
@@ -21,6 +24,9 @@ def main():
         
         scr.fill(BLACK)
         pygame.display.flip()
+
+        ms_passed = clock.tick(FPS)
+        dt = ms_passed / 1000
 
 
 
